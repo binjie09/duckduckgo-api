@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  duckduckgo-api:
+    image: binjie09/duckduckgo-api
+    restart: always
+    ports:
+      - "8304:8000"
