@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 
 @app.route('/search')
-def hello_world():  # put application's code here
+def search():  # put application's code here
     from duckduckgo_search import ddg
 
     keywords = request.args.get('q')
