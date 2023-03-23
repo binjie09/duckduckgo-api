@@ -1,12 +1,10 @@
 from flask import Flask, request
-
+from duckduckgo_search import ddg
 app = Flask(__name__)
 
 
 @app.route('/search')
 def search():  # put application's code here
-    from duckduckgo_search import ddg
-
     keywords = request.args.get('q')
     print(request.args.get('max_results'))
     max_results = int(request.args.get('max_results') or "3")
