@@ -1,5 +1,11 @@
 # duckduckgo-api
 
+## Use vercel
+[https://duckduckgo-api.vercel.app/search?q=啊对对对是什么梗&max_results=3](https://duckduckgo-api.vercel.app/search?q=啊对对对是什么梗&max_results=3)
+
+使用vercel部署的本项目,免费，但是vercel免费用量用完就无了
+
+可点下方按钮部署到自己的Vercel
 
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/binjie09/duckduckgo-api)
 
@@ -24,7 +30,8 @@
 
 </details>
 
-use docker
+## Self host
+###use docker
 
 ```
 docker run -p 8000:8000 binjie09/duckduckgo-api
@@ -50,8 +57,10 @@ then get `http://localhost:8000/search?q=啊对对对是什么梗&max_results=3`
     }
 ]
 ```
-
+### self host
 ```bash
+git clone https://github.com/binjie09/duckduckgo-api.git
+cd duckduckgo-api
 python3 -m venv myenv && source myenv/bin/activate && pip install -r requirements.txt
 gunicorn -b 0.0.0.0:8000 app:app
 ```
