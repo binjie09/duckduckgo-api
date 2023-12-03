@@ -1,7 +1,7 @@
 certifi==2022.12.7
 charset-normalizer==3.1.0
 click==8.1.3
-duckduckgo-search>=3.8.5
+duckduckgo-search>=3.9.9
 Flask==2.2.3
 gunicorn==20.1.0
 idna==3.4
