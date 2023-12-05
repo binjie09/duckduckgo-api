@@ -13,3 +13,4 @@ requests>=2.28.2
 urllib3==1.26.15
 Werkzeug==2.2.3
 zipp==3.15.0
+flask[async]
