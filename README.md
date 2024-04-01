@@ -34,7 +34,7 @@
 ###use docker
 
 ```
-docker run -p 8000:8000 binjie09/duckduckgo-api
+docker run -p 8000:8000 docker.io/library/duckduckgo-api:latest
 ```
 
 then get `http://localhost:8000/search?q=啊对对对是什么梗&max_results=3`
