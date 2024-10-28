@@ -38,6 +38,23 @@
 docker run -p 8000:8000 binjie09/duckduckgo-api
 ```
 
+### use docker-compose
+
+```
+version: '3.8'
+
+services:
+  redis:
+    image: hub.binjie.site:7777/binjie09/duckduckgo-api
+    restart: always
+    ports:
+      - "8000:8000"
+    # environment: # 如果需要代理使用这种方式
+    #   - http_proxy=http://192.168.1.14:7890
+    #   - https_proxy=http://192.168.1.14:7890
+
+```
+
 then get `http://localhost:8000/search?q=啊对对对是什么梗&max_results=3`
 ```json
 {
