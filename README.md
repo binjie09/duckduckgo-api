@@ -35,7 +35,7 @@
 ### use docker
 
 ```
-docker run -p 8000:8000 binjie09/duckduckgo-api
+docker run -p 8000:8000 docker.io/library/duckduckgo-api:latest
 ```
 
 ### use docker-compose
